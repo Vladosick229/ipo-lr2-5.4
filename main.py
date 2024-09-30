@@ -1,10 +1,10 @@
-numbers_input = input("Введите восьмиричное число через пробел: ")
+numb = int(input("Введите восьмиричное число: "))
 
-n1 = int(numbers_input[0])
-n2 = int(numbers_input[1])
-n3 = int(numbers_input[2])
-n4 = int(numbers_input[3])
-n5 = int(numbers_input[4])
+n1 = numb // 10000  
+n2 = (numb // 1000) % 10 
+n3 = (numb // 100) % 10   
+n4 = (numb // 10) % 10   
+n5 = numb % 10     
 
 res = (n1 * 8 ** 4) + (n2 * 8 ** 3) + (n3 * 8 ** 2) + (n4 * 8 ** 1) + (n5 * 8 ** 0)
 
